@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #2c3e50; /* Dark blue background color */
+    color: #ecf0f1; /* Light text color */
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.card {
+    background-color: #3498db; /* Blue card background color */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+h4 {
+    margin: 0;
+    color: #ecf0f1; /* Light text color */
+}
+
+p {
+    margin: 10px 0 0;
+    color: #e8e8e9; /* Gray text color */
+}
+
+.search-bar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background-color: #2980b9; /* Darker blue submit button color */
+    color: #ecf0f1; /* Light text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #2c3e50; /* Slightly darker hover color */
+}
