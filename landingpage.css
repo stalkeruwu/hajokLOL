@@ -118,16 +118,18 @@ img{
     opacity: 1;
 }
 .menetrend{
-    grid-column: 1/3;
     grid-row: 2/3;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
 
 }
 .button{
-    display: flex;
-    justify-content: center;
     margin-top: 10px;
     font-size: larger;
     background-color: #286c99;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 
