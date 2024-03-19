@@ -135,6 +135,7 @@ img{
 
 @media screen and (max-width: 1400px) {
     footer{
+        margin-top: 10px;
         position: relative;
     }
     .container {
