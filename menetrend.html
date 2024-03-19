@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="hajoapp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="script.js"></script>
+
+
+  <title>Boat Schedule</title>
+</head>
+<body ng-controller="hajocontroller">
+    <header>
+        <div class="header">
+            <h1>Hajó Járatok</h1>
+
+            <div class="menu">
+            <a href="index.html">Főoldal</a>
+            <a href="menetrend.html">Menetrend</a>
+            </div>
+        </div>
+    </header>
+
+
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." ng-model="filterInput">
+  </div>
+
+  <div class="grid-container">
+    <div class="card" ng-repeat="item in hajok | filter:filterInput">
+       <div class="container">
+        <h4><b><i class="fas fa-ship"></i> {{item.jarat}}</b></h4>
+        <p><i class="fas fa-map-marker-alt"></i> {{item.honnan}} to <i class="fas fa-map-marker-alt" style="transform: rotate(180deg)"></i> {{item.hova}}</p>
+        <p>Indulás: {{item.indul}} <br> Érkezés: {{item.erkezik}}</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
